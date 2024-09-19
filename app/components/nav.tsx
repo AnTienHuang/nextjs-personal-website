@@ -2,12 +2,7 @@
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-
-export const pages = [
-  { name: "Experience", href: "/experience"},
-  { name: "Projects", href: "/projects" },
-  { name: "Contact", href: "/contact" },
-];
+import { pages } from "./navData";
 
 export const Navigation: React.FC = () => {
 	const ref = useRef<HTMLElement>(null);
