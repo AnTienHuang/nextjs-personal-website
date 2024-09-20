@@ -63,9 +63,6 @@ importers:
         specifier: 3.0.1
         version: 3.0.1
     devDependencies:
-      '@eslint/js':
-        specifier: ^9.10.0
-        version: 9.10.0
       '@opentelemetry/api':
         specifier: 1.4.1
         version: 1.4.1
@@ -90,9 +87,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.16
         version: 10.4.16(postcss@8.4.31)
-      eslint:
-        specifier: ^9.10.0
-        version: 9.10.0(jiti@1.20.0)
       postcss:
         specifier: ^8.4.31
         version: 8.4.31
