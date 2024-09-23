@@ -31,10 +31,13 @@ export default function Home() {
         <h2 className="text-sm text-green-700">
           I'm a software engineer from Taiwan currently living in London.
         </h2>
+        <h2 className="text-sm text-green-700">
+          This website is still under construction, it will be ready in few weeks.
+        </h2>
       </div>
-      <div>
+      {/* <div>
         Chat to my chat bot
-      </div>
+      </div> */}
     </div>
   );
 }
