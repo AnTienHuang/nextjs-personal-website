@@ -32,6 +32,9 @@ export default function Home() {
           I'm a software engineer from Taiwan currently living in London.
         </h2>
       </div>
+      <div>
+        Chat to my chat bot
+      </div>
     </div>
   );
 }
