@@ -7,7 +7,7 @@ import { Card } from "../components/card";
 const links = [
 	{
 		icon: <Linkedin size={40} />,
-		href: "https://",
+		href: "https://www.linkedin.com/in/an-tien-huang/",
 		label: "LinkedIn",
 		handle: "An-Tien Soran Huang",
 	},
