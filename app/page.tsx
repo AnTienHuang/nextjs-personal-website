@@ -32,7 +32,7 @@ export default function Home() {
           I'm a software engineer from Taiwan currently living in London.
         </h2>
         <h2 className="text-sm text-green-700">
-          This website is still under construction, it will be ready in few weeks.
+          This website is still under construction, please come back later.
         </h2>
       </div>
       {/* <div>
