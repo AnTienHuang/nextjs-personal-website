@@ -7,7 +7,9 @@ type Props = {
 	project: {
 		url?: string;
 		title: string;
-		description: string;
+    subtitle: string;
+		content: string;
+    date: string;
 		repository?: string;
 	};
 
@@ -106,7 +108,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 							{project.title}
 						</h1>
 						<p className="mt-6 text-lg leading-8 text-zinc-300">
-							{project.description}
+							{project.subtitle}
 						</p>
 					</div>
 

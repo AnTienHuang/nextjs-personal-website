@@ -1,10 +1,12 @@
 import { notFound } from "next/navigation";
-import { allProjects } from "contentlayer/generated";
-import { Mdx } from "@/app/components/mdx";
 import { Header } from "./header";
-import "./mdx.css";
 import { ReportView } from "./view";
 import { Redis } from "@upstash/redis";
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
+import projects from '@/app/data/projects';
+import { Pluggable } from 'unified'
+
 
 export const revalidate = 60;
 
@@ -16,17 +18,15 @@ type Props = {
 
 const redis = Redis.fromEnv();
 
-export async function generateStaticParams(): Promise<Props["params"][]> {
-  return allProjects
-    .filter((p) => p.published)
-    .map((p) => ({
-      slug: p.slug,
-    }));
+export async function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.slug,
+  }))
 }
 
 export default async function PostPage({ params }: Props) {
   const slug = params?.slug;
-  const project = allProjects.find((project) => project.slug === slug);
+  const project = projects.find((p) => p.slug === params.slug)
 
   if (!project) {
     notFound();
@@ -41,7 +41,10 @@ export default async function PostPage({ params }: Props) {
       <ReportView slug={project.slug} />
 
       <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
-        <Mdx code={project.body.code} />
+        <div>
+          <h1>{project.title}</h1>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{project.content}</ReactMarkdown>
+        </div>
       </article>
     </div>
   );
