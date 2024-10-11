@@ -5,6 +5,7 @@ import { Redis } from "@upstash/redis";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import projects from '@/app/data/projects';
+import { PluggableList } from "react-markdown/lib";
 
 
 export const revalidate = 60;
@@ -42,7 +43,7 @@ export default async function PostPage({ params }: Props) {
       <article className="px-4 py-12 mx-auto prose prose-zinc prose-quoteless">
         <div>
           <h1>{project.title}</h1>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{project.content}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm] as PluggableList}>{project.content}</ReactMarkdown>
         </div>
       </article>
     </div>
