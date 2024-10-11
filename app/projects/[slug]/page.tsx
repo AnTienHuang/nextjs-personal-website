@@ -5,7 +5,6 @@ import { Redis } from "@upstash/redis";
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import projects from '@/app/data/projects';
-import { Pluggable } from 'unified'
 
 
 export const revalidate = 60;
