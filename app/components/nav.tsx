@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft } from "lucide-react";
+import { Home } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { pages } from "./navData";
@@ -28,7 +28,7 @@ export const Navigation: React.FC = () => {
 						: "bg-zinc-900/500  border-zinc-800 "
 				}`}
 			>
-				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
+				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto max-w-7xl">
           <div className="flex justify-between gap-8">
             {pages.map((item) => (
               <Link
@@ -44,7 +44,7 @@ export const Navigation: React.FC = () => {
 						href="/"
 						className="duration-200 text-zinc-300 hover:text-zinc-100"
 					>
-						<ArrowLeft className="w-6 h-6 " />
+						<Home className="w-6 h-6 " />
 					</Link>
 				</div>
 			</div>

@@ -1,5 +1,5 @@
 "use client";
-import { ArrowLeft, Eye, Github, Twitter } from "lucide-react";
+import { ArrowLeft, Eye } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 
@@ -54,7 +54,7 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 						: "bg-white/10  border-zinc-200 lg:border-transparent"
 				}`}
 			>
-				<div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
+				<div className="container flex flex-row-reverse items-center justify-between p-10 mx-auto pt-15 max-w-6xl">
 					<div className="flex justify-between gap-8">
 						<span
 							title="View counter for this page"
@@ -69,41 +69,24 @@ export const Header: React.FC<Props> = ({ project, views }) => {
 								views,
 							)}
 						</span>
-						<Link target="_blank" href="https://twitter.com/chronark_">
-							<Twitter
-								className={`w-6 h-6 duration-200 hover:font-medium ${
-									isIntersecting
-										? " text-zinc-400 hover:text-zinc-100"
-										: "text-zinc-600 hover:text-zinc-900"
-								} `}
-							/>
-						</Link>
-						<Link target="_blank" href="https://github.com/chronark">
-							<Github
-								className={`w-6 h-6 duration-200 hover:font-medium ${
-									isIntersecting
-										? " text-zinc-400 hover:text-zinc-100"
-										: "text-zinc-600 hover:text-zinc-900"
-								} `}
-							/>
-						</Link>
 					</div>
 
 					<Link
 						href="/projects"
-						className={`duration-200 hover:font-medium ${
+						className={`duration-200 hover:font-medium flex items-center space-x-2 ${
 							isIntersecting
-								? " text-zinc-400 hover:text-zinc-100"
+								? "text-zinc-400 hover:text-zinc-100"
 								: "text-zinc-600 hover:text-zinc-900"
-						} `}
+						}`}
 					>
-						<ArrowLeft className="w-6 h-6 " />
+						<ArrowLeft className="w-6 h-6" />
+						<span>Back to Projects</span>
 					</Link>
 				</div>
 			</div>
-			<div className="container mx-auto relative isolate overflow-hidden  py-24 sm:py-32">
+			<div className="container mx-auto relative isolate overflow-hidden  py-4 sm:py-8">
 				<div className="mx-auto max-w-7xl px-6 lg:px-8 text-center flex flex-col items-center">
-					<div className="mx-auto max-w-2xl lg:mx-0">
+					<div className="mx-auto max-w-2xl lg:mx-0 pt-20">
 						<h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl font-display">
 							{project.title}
 						</h1>
