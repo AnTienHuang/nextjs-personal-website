@@ -1,13 +1,21 @@
-type Page = {
+interface Page {
   name: string
   href: string
 }
 
-type Project = {
+interface Project {
   slug: string
   title: string
   subtitle: string
   date: string
   order: number
   content: string
+}
+
+interface ExperienceItem {
+  role: string;
+  company: string;
+  location: string;
+  period: string;
+  description: string[];
 }

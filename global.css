@@ -8,3 +8,8 @@
   }
 } 
 
+body {
+    color: white; /* Set font color to white */
+    background-color: #000; /* Optional: set background to black for contrast */
+    font-family: Arial, sans-serif; /* Default font family */
+  }
