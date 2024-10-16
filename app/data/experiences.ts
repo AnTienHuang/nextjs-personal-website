@@ -3,7 +3,7 @@ const experiences: ExperienceItem[] = [
     role: 'Cloud Platform Engineer / Business Analyst',
     company: 'Trend Micro',
     location: 'Taipei, Taiwan',
-    period: 'Jun 2020 – Jul 2023',
+    period: 'Jun 2020 - Jul 2023',
     skills: [
       {
         name: 'Salesforce',
@@ -36,7 +36,7 @@ const experiences: ExperienceItem[] = [
     role: 'Software Engineer',
     company: 'Information Commissioner’s Office',
     location: 'Wilmslow, UK',
-    period: 'Oct 2017 – Aug 2018',
+    period: 'Oct 2017 - Aug 2018',
     skills: [
       {
         name: 'Test Automation',

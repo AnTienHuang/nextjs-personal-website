@@ -24,7 +24,7 @@ const ExperiencePage: React.FC = () => {
             </h3>
             {experience.skills.map((skill, skillIndex) => (
               <div key={skillIndex} style={{ marginTop: '1rem' }}>
-                <h4 style={{ fontSize: '1.2rem', color: '#546E7A', margin: '0 0 0.5rem 0', fontWeight: 'bold' }}>
+                <h4 style={{ fontSize: '1.2rem', color: '#78909C', margin: '0 0 0.5rem 0', fontWeight: 'bold' }}>
                   {skill.name}
                 </h4>
                 <ul style={{ paddingLeft: '1.5rem', listStyleType: 'disc', color: '#B0BEC5' }}>
@@ -51,7 +51,7 @@ const ExperiencePage: React.FC = () => {
             <h2 style={{ margin: '0', fontSize: '1.5rem', color: '#CFD8DC' }}>
               {educationItem.program}
             </h2>
-            <h3 style={{ margin: '0.5rem 0', fontWeight: 'bold', fontSize: '1.2rem', color: '#B0BEC5' }}>
+            <h3 style={{ margin: '0.5rem 0', fontWeight: 'bold', fontSize: '1.2rem', color: '#78909C' }}>
               {educationItem.university}
               <span style={{ color: '#37474F' }}> | </span> 
               {educationItem.period}
