@@ -17,5 +17,10 @@ interface ExperienceItem {
   company: string;
   location: string;
   period: string;
-  description: string[];
+  skills: Skill[];
+}
+
+interface Skill {
+  name: string;
+  descriptions: string[];
 }
