@@ -24,3 +24,11 @@ interface Skill {
   name: string;
   descriptions: string[];
 }
+
+interface EducationItem {
+  program: string;
+  university: string; 
+  location: string;
+  period: string;
+  grade: string;
+}
