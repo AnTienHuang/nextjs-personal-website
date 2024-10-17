@@ -29,6 +29,27 @@ Details of the project can be found in my Microsoft [blog](https://techcommunity
 
 I also wrote a tutorial for integrating Azure Maps with Next.js: [link](https://medium.com/@antien.huang/azure-maps-tutorial-with-nextjs-99f395f07a19?source=friends_link&sk=c3a20619f76e12fb7c55c76f97e2618f)
 `
+  },
+  {
+    slug: 'motioninput',
+    title: 'MotionInput Games Website',
+    subtitle: 'Website development for MotionInput Games: https://www.motioninputgames.com',
+    date: 'JAN 2024 ~ APR 2024',
+    order: 2,
+    content: `
+MotionInput Games, a spinout from UCL Computer Science, is focused on creating new ways to interact with software and games through movement. By using everyday PCs and webcams, it enables users to control games and applications through face and body movements, without the need for specialized equipment. This allows children to run and jump to control their favorite games, while adults can enjoy more active engagement after long periods of sitting. The technology also promotes equitable computing, making digital experiences accessible to people of all physical abilities.
+
+My team and I developed the current [website](https://www.motioninputgames.com) for MotionInput Games with Next.js. I also developed a Content Management System for it with Prisma and PostgreSQL to help admins manage the case studies as well as other types of data records.
+
+Below are the site map and overview of the website architecture:
+![Site Map](/images/motioninput/sitemap.png)
+![Architecture Overview](/images/motioninput/aod.png)
+    ` 
+  },
+  {
+    slug: 'clinscribe',
+    title: 'ClinScribe',
+
   }
 ];
 
