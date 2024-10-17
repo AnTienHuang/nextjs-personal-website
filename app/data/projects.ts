@@ -1,3 +1,5 @@
+import { subtle } from "crypto";
+
 const projects = [
   {
     slug: 'roomradar',
@@ -41,15 +43,33 @@ MotionInput Games, a spinout from UCL Computer Science, is focused on creating n
 
 My team and I developed the current [website](https://www.motioninputgames.com) for MotionInput Games with Next.js. I also developed a Content Management System for it with Prisma and PostgreSQL to help admins manage the case studies as well as other types of data records.
 
-Below are the site map and overview of the website architecture:
-![Site Map](/images/motioninput/sitemap.png)
+Below are the overview of the website architecture and site map:
 ![Architecture Overview](/images/motioninput/aod.png)
+![Site Map](/images/motioninput/sitemap.png)
     ` 
   },
   {
     slug: 'clinscribe',
     title: 'ClinScribe',
+    subtitle: 'AI-powered transcriber for doctors, developed during 2024 UCL FHIR Hackathon',
+    date: 'MAR 2024',
+    order: 3,
+    content: `
+![Demo](/images/clinscribe/demo.gif)
+There are 3 big issues for the current clinical procedure in the UK:
+1. Clinicians spend 1/3 of their workday on documentation, away from actual clinical duties.
+2. Most notes are recorded post-consultation, increasing the surface area for human errors.
+3. Writing notes during consultations decreases the presence with patients, harming the quality of the interaction.
 
+During the UCL FHIR hackathon 2024, we created a solution to ease this burden, leveraging FIHR, a global standard allowing healthcare data interoperability.
+In response to these problems, we've developed a solution that automatically transcribes clinical consultation audio and generates artefacts such as clinical letters or FHIR queries to update the EHR system.
+Our solution leverages the Azure stack with an App Service orchestrating the data flow between the user and different components of the system.
+1. Upon uploading a consultation recording, the Whisper Model from the Azure OpenAI Service is utilised for transcription generation.
+2. This transcription is then transformed into FHIR-compatible JSON by the GPT4-Turbo model.
+3. Finally, after the clinician confirms the content and format, the output is dispatched to a FHIR-compatible database.
+This makes our solution EHR-agnostic and ready to integrate with different EHR products.
+![Architecture Overview](/images/clinscribe/aod.png)
+    `
   }
 ];
 
