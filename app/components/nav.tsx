@@ -40,12 +40,14 @@ export const Navigation: React.FC = () => {
             ))}
           </div>
 
-					<Link
-						href="/"
-						className="duration-200 text-zinc-300 hover:text-zinc-100"
-					>
-						<Home className="w-6 h-6 " />
-					</Link>
+          <Link
+            href="/"
+            className="duration-200 text-zinc-300 hover:text-zinc-100"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-6 h-6">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l9-9m0 0l9 9M9 21V9h6v12" />
+            </svg>
+          </Link>
 				</div>
 			</div>
 		</header>
