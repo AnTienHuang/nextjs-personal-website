@@ -6,12 +6,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
-        <ul className="flex items-center justify-center gap-4">
+        <ul className="flex items-center justify-center gap-10">
           {pages.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm duration-500 text-zinc-500 hover:text-zinc-300"
+              className="text-2xl duration-500 text-zinc-400 hover:text-zinc-100"
             >
               {item.name}
             </Link>
@@ -19,20 +19,21 @@ export default function Home() {
         </ul>
       </nav>
 
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-
-      <h1 className="py-3.5 px-0.5 z-10 text-4xl text-transparent duration-1000 bg-white cursor-default animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text text-zinc-500">
+      <h1 className="py-3.5 px-0.5 z-10 text-4xl bg-white cursor-default animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text text-zinc-300">
         Soran Huang
       </h1>
 
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-
-      <div className="my-16 text-center animate-fade-in">
-        <h2 className="text-sm text-green-700">
+      <div className="my-12 text-center animate-fade-in">
+        <h2 className="text-lg text-green-500">
           I'm a software engineer from Taiwan currently living in London.
         </h2>
-        <h2 className="text-sm text-green-700">
-          This website is still under construction, please come back later.
+      </div>
+      <div className="text-center animate-fade-in">
+        <h2 className="text-lg text-green-500">
+          My skill set includes: Salesforce Admin and Development, Microsoft D365, Power Platform, Azure,
+        </h2>
+        <h2 className="text-lg text-green-500">
+          Python, Java, SQL, JavaScript/TypeScript, Next.js
         </h2>
       </div>
       {/* <div>
