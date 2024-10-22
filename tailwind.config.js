@@ -32,13 +32,9 @@ module.exports = {
 				sans: ["var(--font-inter)", ...defaultTheme.fontFamily.sans],
 				display: ["var(--font-calsans)"],
 			},
-			backgroundImage: {
-				"gradient-radial":
-					"radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-stops))",
-			},
 			animation: {
-				"fade-in": "fade-in 3s ease-in-out forwards",
-				title: "title 3s ease-out forwards",
+				"fade-in": "fade-in 2s ease-in-out forwards",
+				title: "title 2s ease-in-out forwards",
 			},
 			keyframes: {
 				"fade-in": {

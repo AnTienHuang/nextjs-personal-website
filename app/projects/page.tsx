@@ -1,11 +1,11 @@
-import Link from "next/link";
+// import Link from "next/link";
 import React from "react";
 import projects from '@/app/data/projects';
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
 import { Article } from "./article";
 import { Redis } from "@upstash/redis";
-import { Eye } from "lucide-react";
+// import { Eye } from "lucide-react";
 
 const redis = Redis.fromEnv();
 
