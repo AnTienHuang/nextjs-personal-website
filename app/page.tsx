@@ -20,7 +20,7 @@ export default function Home() {
           </ul>
         </nav>
 
-        <h1 className="z-10 text-4xl cursor-default animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-zinc-300/80 to-zinc-300">
+        <h1 className="z-10 text-4xl cursor-default animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-zinc-300/80 to-zinc-300 dark:text-white">
           Soran Huang
         </h1>
 
