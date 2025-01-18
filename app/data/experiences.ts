@@ -1,6 +1,6 @@
 const experiences: ExperienceItem[] = [
   {
-    role: 'Cloud Platform Engineer / Business Analyst',
+    role: 'Cloud Platform Engineer',
     company: 'Trend Micro',
     location: 'Taipei, Taiwan',
     period: 'Jun 2020 - Jul 2023',

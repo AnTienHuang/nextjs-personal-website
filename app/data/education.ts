@@ -4,7 +4,7 @@ const educationItems: EducationItem[] = [
     university: 'University College London (UCL)',
     location: 'London, UK',
     period: 'Sep 2023 - Sep 2024',
-    grade: 'Distinction (70+%) (Projected)',
+    grade: 'Distinction (70+%)',
   },
   {
     program: 'BSc (Hons) Information Technology Management for Business',
